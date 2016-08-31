@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Animate.css</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, minimal-ui" />
+<!--
+  <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="//code.jquery.com" />
+
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,400italic,700italic,700' rel='stylesheet' type='text/css'>
+-->
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header class="site__header island">
+  <div class="wrap">
+   <span id="animationSandbox" style="display: block;"><h1 class="site__title mega">Animate.css</h1></span>
+    <span class="beta subhead">Just-add-water CSS animations</span>
+  </div>
+</header><!-- /.site__header -->
+
+<main class="site__content island" role="content">
+  <div class="wrap">
+    <form>
+      <select class="input input--dropdown js--animations">
+        <optgroup label="Attention Seekers">
+          <option value="bounce">弹跳</option>
+          <option value="flash">闪光</option>
+          <option value="pulse">脉冲</option>
+          <option value="rubberBand">橡皮</option>
+          <option value="shake">抖动</option>
+          <option value="swing">摆动</option>
+          <option value="tada">放大摆动</option>
+          <option value="wobble">摇晃</option>
+        </optgroup>
+
+        <optgroup label="Bouncing Entrances">
+          <option value="bounceIn">入场</option>
+          <option value="bounceInDown">降落</option>
+          <option value="bounceInLeft">左侧飞入</option>
+          <option value="bounceInRight">右侧飞入</option>
+          <option value="bounceInUp">上升进入</option>
+        </optgroup>
+
+        <optgroup label="Bouncing Exits">
+          <option value="bounceOut">退场</option>
+          <option value="bounceOutDown">下落</option>
+          <option value="bounceOutLeft">左侧飞出</option>
+          <option value="bounceOutRight">右侧飞出</option>
+          <option value="bounceOutUp">上升飞出</option>
+        </optgroup>
+
+        <optgroup label="Fading Entrances">
+          <option value="fadeIn">淡入</option>
+          <option value="fadeInDown">下落淡入</option>
+          <option value="fadeInDownBig">场外下落淡入</option>
+          <option value="fadeInLeft">左侧淡入</option>
+          <option value="fadeInLeftBig">场外左侧淡入</option>
+          <option value="fadeInRight">右侧淡入</option>
+          <option value="fadeInRightBig">场外右侧淡入</option>
+          <option value="fadeInUp">上升淡入</option>
+          <option value="fadeInUpBig">场外上升淡入</option>
+        </optgroup>
+
+        <optgroup label="Fading Exits">
+          <option value="fadeOut">淡出</option>
+          <option value="fadeOutDown">下落淡出</option>
+          <option value="fadeOutDownBig">场外下落淡出</option>
+          <option value="fadeOutLeft">场外左侧淡出</option>
+          <option value="fadeOutLeftBig">场外左侧淡出</option>
+          <option value="fadeOutRight">右侧淡出</option>
+          <option value="fadeOutRightBig">场外右侧淡出</option>
+          <option value="fadeOutUp">上升淡出</option>
+          <option value="fadeOutUpBig">场外上升淡出</option>
+        </optgroup>
+
+        <optgroup label="抛出">
+          <option value="flip">flip</option>
+          <option value="flipInX">flipInX</option>
+          <option value="flipInY">flipInY</option>
+          <option value="flipOutX">flipOutX</option>
+          <option value="flipOutY">flipOutY</option>
+        </optgroup>
+
+        <optgroup label="Lightspeed">
+          <option value="lightSpeedIn">斜入</option>
+          <option value="lightSpeedOut">斜出</option>
+        </optgroup>
+
+        <optgroup label="旋转和半旋转">
+          <option value="rotateIn">rotateIn</option>
+          <option value="rotateInDownLeft">rotateInDownLeft</option>
+          <option value="rotateInDownRight">rotateInDownRight</option>
+          <option value="rotateInUpLeft">rotateInUpLeft</option>
+          <option value="rotateInUpRight">rotateInUpRight</option>
+        </optgroup>
+
+        <optgroup label="旋转退出">
+          <option value="rotateOut">rotateOut</option>
+          <option value="rotateOutDownLeft">rotateOutDownLeft</option>
+          <option value="rotateOutDownRight">rotateOutDownRight</option>
+          <option value="rotateOutUpLeft">rotateOutUpLeft</option>
+          <option value="rotateOutUpRight">rotateOutUpRight</option>
+        </optgroup>
+
+        <optgroup label="Sliding Entrances">
+          <option value="slideInUp">slideInUp</option>
+          <option value="slideInDown">slideInDown</option>
+          <option value="slideInLeft">slideInLeft</option>
+          <option value="slideInRight">slideInRight</option>
+
+        </optgroup>
+        <optgroup label="Sliding Exits">
+          <option value="slideOutUp">slideOutUp</option>
+          <option value="slideOutDown">slideOutDown</option>
+          <option value="slideOutLeft">slideOutLeft</option>
+          <option value="slideOutRight">slideOutRight</option>
+          
+        </optgroup>
+        
+        <optgroup label="Zoom Entrances">
+          <option value="zoomIn">zoomIn</option>
+          <option value="zoomInDown">zoomInDown</option>
+          <option value="zoomInLeft">zoomInLeft</option>
+          <option value="zoomInRight">zoomInRight</option>
+          <option value="zoomInUp">zoomInUp</option>
+        </optgroup>
+        
+        <optgroup label="Zoom Exits">
+          <option value="zoomOut">zoomOut</option>
+          <option value="zoomOutDown">zoomOutDown</option>
+          <option value="zoomOutLeft">zoomOutLeft</option>
+          <option value="zoomOutRight">zoomOutRight</option>
+          <option value="zoomOutUp">zoomOutUp</option>
+        </optgroup>
+
+        <optgroup label="Specials">
+          <option value="hinge">hinge</option>
+          <option value="rollIn">rollIn</option>
+          <option value="rollOut">rollOut</option>
+        </optgroup>
+      </select>
+
+      <button class="butt js--triggerAnimation">Animate it</button>
+    </form>
+    <hr />
+    <p class="meta"><a href="https://raw.github.com/daneden/animate.css/master/animate.css" download="animate.css">Download Animate.css</a> or <a href="//github.com/daneden/animate.css">View on GitHub</a></p>
+    <p><small>Another thing from <a href="//daneden.me">Daniel Eden</a>.</small></p>
+  </div>
+</main><!-- /.site__content -->
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script>
+  function testAnim(x) {
+    $('#animationSandbox').removeClass().addClass(x + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+      $(this).removeClass();
+    });
+  };
+
+  $(document).ready(function(){
+    $('.js--triggerAnimation').click(function(e){
+      e.preventDefault();
+      var anim = $('.js--animations').val();
+      testAnim(anim);
+    });
+
+    $('.js--animations').change(function(){
+      var anim = $(this).val();
+      testAnim(anim);
+    });
+  });
+
+</script>
+
+</body>
+</html>
